@@ -1,0 +1,23 @@
+@import "~/themes/colors";
+
+.scoreCard{
+    text-align: center;
+
+    .min-title{
+        font-family: "Poppins","Poppins-Bold";
+        font-size: small;
+        font-weight: bold;
+        color:$blue;
+    }
+
+    .max-title{
+        font-family: "Poppins", "Poppins-Bold";
+        font-weight: bold;
+        font-size: 20;
+    }
+
+}
+    .buyButton{
+        background: $yellow;
+        color: black;
+    }

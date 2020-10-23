@@ -1,0 +1,43 @@
+<StackLayout>
+    <Label padding="20">
+        <FormattedString>
+            <Span text=" Upcoming " ></Span>
+            <Span text="Matches" fontWeight="bold"></Span>
+        </FormattedString>
+    </Label>
+
+
+    <ListView col="1" [items]="items">
+        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+            <GridLayout columns="20,*,20" rows="auto, auto">
+                <FlexboxLayout col="1" justifyContent="space-between">
+                <Image [src]="item.homeImage" width="20%"></Image>
+            <StackLayout class="scoreCard" width="60%">
+                <Label class="min-title" text="GHANA PREMIERE LEAGUE"></Label>
+                <Label class="max-title" text="TUE, 20 OCT"></Label>
+                <Label class="min-title" text="19:00"></Label>
+                <Button class="buyButton" width="100%">
+                    <FormattedString>
+                        <Span text=" Buy  " ></Span>
+                        <Span text="Tickets" fontWeight="bold"></Span>
+                    </FormattedString>
+                </Button>
+            </StackLayout>
+            <Image [src]="item.awayImage" width="20%"></Image>
+        </FlexboxLayout>
+    </GridLayout>
+            </ng-template>
+        </ListView>
+<!--
+        <FlexboxLayout col="1" justifyContent="space-between">
+            <Image src="https://www.sportsbase.io/images/clubs/17155.png" width="20%"></Image>
+            <StackLayout class="scoreCard" width="60%">
+                <Label class="min-title" text="GHANA PREMIERE LEAGUE"></Label>
+                <Label class="max-title" text="TUE, 20 OCT"></Label>
+                <Label class="min-title" text="19:00"></Label>
+            </StackLayout>
+            <Image src="https://upload.wikimedia.org/wikipedia/en/b/b1/Legon_Cities_FC.png" width="20%"></Image>
+        </FlexboxLayout> -->
+
+
+</StackLayout>
